@@ -18,7 +18,6 @@
 <img src="IMG_3357.jpeg" alt="Banner">
 </div>
 
-
 <div class="board">
 
 <div class="column">
@@ -46,26 +45,20 @@ COMPLETADAS
 
 </div>
 
-
 <br>
 
-
-<!-- Botón de nueva tarea -->
-
 <div class="controls">
-<button class="primary" onclick="openModal()">Nueva tarea</button>
+<button class="primary" onclick="openModal()">
+Nueva tarea
+</button>
 </div>
-
 
 <div class="modal" id="taskModal">
 
 <div class="modal-content">
 
-
 <button onclick="closeModal()">✕</button>
 
-
-<!--cierre de botón -->
 <h2>Editar tarea</h2>
 
 <input type="hidden" id="taskId">
@@ -80,23 +73,30 @@ type="text"
 id="taskDesc"
 placeholder="Descripción">
 
+<input
+type="text"
+id="taskResponsible"
+placeholder="Responsable">
+
 <select id="taskStatus">
 <option value="pending">Pendiente</option>
 <option value="progress">En proceso</option>
 <option value="completed">Completada</option>
 </select>
 
-<button class="success" onclick="saveTask()">
+<button
+class="success"
+onclick="saveTask()">
 Guardar tarea
 </button>
 
+</div>
 
-<!-- Script -->
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <script src="app.js"></script>
-
 
 </body>
 </html>

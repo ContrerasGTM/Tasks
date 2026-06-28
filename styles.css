@@ -1,4 +1,6 @@
-
+/* =========================
+   RESET
+========================= */
 
 *{
     margin:0;
@@ -17,6 +19,10 @@ body{
     margin:auto;
 }
 
+/* =========================
+   BANNER
+========================= */
+
 .banner{
     width:100%;
     height:180px;
@@ -30,14 +36,17 @@ body{
 .banner img{
     width:100%;
     height:100%;
-
-    object-fit: cover;
+    object-fit:cover;
     object-position:center;
 }
 
+/* =========================
+   CONTROLES
+========================= */
+
 .controls{
     display:flex;
-justify-content:center;
+    justify-content:center;
     gap:10px;
     flex-wrap:wrap;
     margin-bottom:20px;
@@ -65,6 +74,10 @@ button{
     background:#dc3545;
     color:white;
 }
+
+/* =========================
+   BOARD
+========================= */
 
 .board{
     display:grid;
@@ -105,6 +118,10 @@ button{
     padding:12px;
 }
 
+/* =========================
+   CARD
+========================= */
+
 .card{
     background:#fafafa;
     border:1px solid #ddd;
@@ -118,11 +135,20 @@ button{
     margin-bottom:8px;
 }
 
-.card-code{
-    color:#666;
-    font-size:13px;
-    margin-bottom:10px;
+.card-desc{
+    color:#444;
+    margin-bottom:8px;
 }
+
+.card-info{
+    font-size:13px;
+    color:#666;
+    margin-bottom:6px;
+}
+
+/* =========================
+   ACTIONS
+========================= */
 
 .card-actions{
     display:flex;
@@ -134,6 +160,10 @@ select{
     padding:6px;
     border-radius:6px;
 }
+
+/* =========================
+   MODAL
+========================= */
 
 .modal{
     display:none;
@@ -163,6 +193,10 @@ select{
     margin-bottom:12px;
     padding:10px;
 }
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media(max-width:900px){
 
